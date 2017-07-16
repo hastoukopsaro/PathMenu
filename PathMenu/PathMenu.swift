@@ -161,9 +161,9 @@ public class PathMenu: UIView {
             angle = 0
         }
         
-        UIView.animate(withDuration: Double(startMenuAnimationDuration)) { [weak self] () -> Void in
-            self?.startButton?.transform = CGAffineTransform(rotationAngle: angle)
-        }
+//         UIView.animate(withDuration: Double(startMenuAnimationDuration)) { [weak self] () -> Void in
+//             self?.startButton?.transform = CGAffineTransform(rotationAngle: angle)
+//         }
         
         if timer == nil {
             timer = Timer.scheduledTimer(timeInterval: Double(timeOffset), target: self, selector: selector, userInfo: nil, repeats: true)
